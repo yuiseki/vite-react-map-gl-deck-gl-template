@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Build page
         run: |
-          npm ci
+          npm ci -f
           npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
