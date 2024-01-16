@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   // TODO: You need to change this to your repo name
-  base: "/vite-deck-gl-map-template/",
+  base: "/vite-react-map-gl-deck-gl-template/",
 });
