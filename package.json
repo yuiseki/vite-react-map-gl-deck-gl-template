@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@deck.gl/core": "^8.9.33",
-    "@deck.gl/geo-layers": "^8.9.33",
-    "@deck.gl/mapbox": "^8.9.33",
-    "@deck.gl/mesh-layers": "^8.9.33",
-    "@deck.gl/react": "^8.9.33",
+    "@deck.gl/core": "^9.0.0",
+    "@deck.gl/geo-layers": "^9.0.0",
+    "@deck.gl/mapbox": "^9.0.0",
+    "@deck.gl/mesh-layers": "^9.0.0",
+    "@deck.gl/react": "^9.0.0",
     "@loaders.gl/3d-tiles": "^4.0.4",
     "maplibre-gl": "^3.6.2",
     "react": "^18.2.0",
