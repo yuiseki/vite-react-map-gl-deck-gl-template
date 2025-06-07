@@ -1,13 +1,14 @@
-import { Tile3DLayer } from "@deck.gl/geo-layers/typed";
+import {DeckProps} from '@deck.gl/core';
+import { Tile3DLayer } from "@deck.gl/geo-layers";
 import { Tiles3DLoader } from "@loaders.gl/3d-tiles";
 import { Map, NavigationControl, useControl } from "react-map-gl/maplibre";
-import { MapboxOverlay, MapboxOverlayProps } from "@deck.gl/mapbox/typed";
+import { MapboxOverlay } from "@deck.gl/mapbox";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 
 function App() {
-  const DeckGLOverlay = (props: MapboxOverlayProps) => {
-    const overlay = useControl(() => new MapboxOverlay(props));
+  const DeckGLOverlay = (props: DeckProps) => {
+    const overlay = useControl<MapboxOverlay>(() => new MapboxOverlay(props));
     overlay.setProps(props);
     return null;
   };
@@ -37,7 +38,9 @@ function App() {
           mapStyle={
             "https://tile.openstreetmap.jp/styles/osm-bright-en/style.json"
           }
-          attributionControl={true}
+          attributionControl={{
+            compact: true,
+          }}
           maxZoom={22}
           maxPitch={85}
           scrollZoom={true}
